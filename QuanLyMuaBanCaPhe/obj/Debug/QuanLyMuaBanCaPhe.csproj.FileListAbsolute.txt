@@ -1,0 +1,17 @@
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\bin\Debug\QuanLyMuaBanCaPhe.exe.config
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\bin\Debug\QuanLyMuaBanCaPhe.exe
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\bin\Debug\QuanLyMuaBanCaPhe.pdb
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.Login.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.Properties.Resources.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.exe
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.pdb
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.TableManagercs.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.Thông_tin_cá_nhân.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.order.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.QuanLyMenu.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.Quanlynhanvien.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.Quanlynhapkho.resources
+C:\Users\ASUS\source\repos\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.XemDoanhThu.resources
