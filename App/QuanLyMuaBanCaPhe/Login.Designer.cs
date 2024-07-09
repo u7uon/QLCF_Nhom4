@@ -51,9 +51,9 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(159, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 38);
+            this.label1.Size = new System.Drawing.Size(325, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quản lý quán cafe";
+            this.label1.Text = "Quản lý quán CAFE";
             // 
             // panel1
             // 

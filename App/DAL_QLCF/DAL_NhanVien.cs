@@ -46,14 +46,13 @@ namespace DAL_QLCF
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "LayVaiTro";
                 cmd.Parameters.AddWithValue("@Email", email);
-                if ((int)cmd.ExecuteScalar() == 1)
+                if( Convert.ToInt16(cmd.ExecuteScalar()) == 1)
                 {
                     return true;
                 }
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
             }
             finally
