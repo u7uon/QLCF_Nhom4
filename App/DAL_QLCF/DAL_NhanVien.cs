@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO_QLCF
+namespace DAL_QLCF
 {
-    public class Class1
+    public class DAL_NhanVien :DBConnect
     {
+
     }
 }

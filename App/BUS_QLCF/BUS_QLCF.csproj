@@ -44,5 +44,15 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_QLCF\DAL_QLCF.csproj">
+      <Project>{d69323aa-6b5b-4796-8f6b-a9086622ec4f}</Project>
+      <Name>DAL_QLCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLCF\DTO_QLCF.csproj">
+      <Project>{292aeda9-8a70-4b4a-9a3a-24e6c71ae694}</Project>
+      <Name>DTO_QLCF</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

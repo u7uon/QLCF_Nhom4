@@ -9,12 +9,14 @@ CREATE TABLE NhanVien
     MaNV AS ('NV' + CAST(ID AS VARCHAR)) PERSISTED PRIMARY KEY,
     Email varchar(50) NOT NULL UNIQUE,
     TenNV nvarchar(100) NOT NULL,
-    VaiTro tinyint DEFAULT 0,
+    VaiTro tinyint ,
     GioiTinh nvarchar(5) ,
+	Luong float not null , 
     SoDT varchar(13),
     DiaChi nvarchar(100),
-    MatKhau varchar(300) NOT NULL
+    MatKhau varchar(300) NOT NULL, 
 );
+
 
 -- Chèn dữ liệu ví dụ
 INSERT INTO NhanVien (Email, TenNV, VaiTro, GioiTinh, SoDT, DiaChi, MatKhau)
