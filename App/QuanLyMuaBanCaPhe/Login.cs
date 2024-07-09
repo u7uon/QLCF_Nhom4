@@ -14,6 +14,8 @@ namespace QuanLyMuaBanCaPhe
 {
     public partial class Login : Form
     {
+
+        //testatsdfyatsfd
         public Login()
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace QuanLyMuaBanCaPhe
             {
                 MessageBox.Show("Đăng nhập thành công");
                 TableManagercs frmMain = new TableManagercs(txtTenDangNhap.Text);
-                frmMain.isAdmin = true;
+                frmMain.isAdmin = bus_nv.GetVaiTro(txtTenDangNhap.Text);
                 frmMain.Show();
                 this.Hide();
             }
@@ -56,7 +58,6 @@ namespace QuanLyMuaBanCaPhe
                 txtMatKhau.Clear();
                 txtTenDangNhap.Focus();
             }
-
         }
     }
 }

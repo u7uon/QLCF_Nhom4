@@ -77,11 +77,10 @@ begin
 select MANV,TenNV,Email,VaiTro,DiaChi,MatKhau from NhanVien
 end
 go
-create proc LayVaiTro 
+alter proc LayVaiTro 
 	@Email varchar(50) 
 as
 begin
 	Select Vaitro from NhanVien where email = @Email
 end
 
-exec LayVaiTro 'duonng1203@gmail.com'
