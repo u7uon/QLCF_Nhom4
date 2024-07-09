@@ -1,6 +1,6 @@
 ﻿namespace QuanLyMuaBanCaPhe
 {
-    partial class XemDoanhThu
+    partial class frmThongke
     {
         /// <summary>
         /// Required designer variable.
@@ -106,13 +106,13 @@
             this.dtgvBill.Size = new System.Drawing.Size(787, 498);
             this.dtgvBill.TabIndex = 0;
             // 
-            // XemDoanhThu
+            // frmThongke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 673);
             this.Controls.Add(this.panel1);
-            this.Name = "XemDoanhThu";
+            this.Name = "frmThongke";
             this.Text = "XemDoanhThu";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

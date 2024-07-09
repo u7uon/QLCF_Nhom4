@@ -84,11 +84,11 @@
     <Compile Include="TableManagercs.Designer.cs">
       <DependentUpon>TableManagercs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Thông tin cá nhân .cs">
+    <Compile Include="DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Thông tin cá nhân .Designer.cs">
-      <DependentUpon>Thông tin cá nhân .cs</DependentUpon>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="XemDoanhThu.cs">
       <SubType>Form</SubType>
@@ -124,8 +124,8 @@
     <EmbeddedResource Include="TableManagercs.resx">
       <DependentUpon>TableManagercs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Thông tin cá nhân .resx">
-      <DependentUpon>Thông tin cá nhân .cs</DependentUpon>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XemDoanhThu.resx">
       <DependentUpon>XemDoanhThu.cs</DependentUpon>
@@ -145,6 +145,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QLCF\BUS_QLCF.csproj">
+      <Project>{6051fdef-c2da-4b09-8013-69d7a1e5ab28}</Project>
+      <Name>BUS_QLCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLCF\DTO_QLCF.csproj">
+      <Project>{292aeda9-8a70-4b4a-9a3a-24e6c71ae694}</Project>
+      <Name>DTO_QLCF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

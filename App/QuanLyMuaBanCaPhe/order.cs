@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyMuaBanCaPhe
 {
-    public partial class order : Form
+    public partial class FrmOrder : Form
     {
-        public order()
+        public FrmOrder()
         {
             InitializeComponent();
         }

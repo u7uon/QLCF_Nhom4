@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyMuaBanCaPhe
 {
-    public partial class QuanLyMenu : Form
+    public partial class frmQlMenu : Form
     {
-        public QuanLyMenu()
+        public frmQlMenu()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace QuanLyMuaBanCaPhe
 {
-    partial class Quanlynhanvien
+    partial class frmQLNV
     {
         /// <summary>
         /// Required designer variable.
@@ -279,13 +279,13 @@
             this.dtgvQuanLyNhanVien.Size = new System.Drawing.Size(917, 345);
             this.dtgvQuanLyNhanVien.TabIndex = 0;
             // 
-            // Quanlynhanvien
+            // frmQLNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 739);
             this.Controls.Add(this.panel1);
-            this.Name = "Quanlynhanvien";
+            this.Name = "frmQLNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyNhanVien";
             this.panel1.ResumeLayout(false);

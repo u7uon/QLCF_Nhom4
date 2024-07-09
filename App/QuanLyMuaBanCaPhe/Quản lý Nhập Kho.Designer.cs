@@ -1,6 +1,6 @@
 ﻿namespace QuanLyMuaBanCaPhe
 {
-    partial class Quanlynhapkho
+    partial class frmQLKho
     {
         /// <summary>
         /// Required designer variable.
@@ -75,13 +75,13 @@
             this.dataGridView1.Size = new System.Drawing.Size(1038, 526);
             this.dataGridView1.TabIndex = 0;
             // 
-            // Quanlynhapkho
+            // frmQLKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1123, 745);
             this.Controls.Add(this.panel1);
-            this.Name = "Quanlynhapkho";
+            this.Name = "frmQLKho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanlyNhapKho";
             this.panel1.ResumeLayout(false);

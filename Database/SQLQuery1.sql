@@ -16,11 +16,11 @@ CREATE TABLE NhanVien
     MatKhau varchar(300) NOT NULL
 );
 
-
+alter table NhanVien drop column Luong
 
 -- Chèn dữ liệu ví dụ
 INSERT INTO NhanVien (Email, TenNV, VaiTro, GioiTinh, SoDT, DiaChi, MatKhau)
-VALUES ('example@example.com', 'Nguyen Van A', 1, 'Nam', '0123456789', '123 Street', 'hashed_password');
+VALUES ('duonng1203@gmail.com', 'Nguyen Van A', 1, 'Nam', '0123456789', '123 Street', '123');
 
 go
 create proc DangNhap
@@ -48,22 +48,26 @@ as begin
 end
 
 -- Đổi mật khẩu
-create proc DoiMatKhau 
+alter proc DoiMatKhau 
 	@email varchar(50),
 	@MatKhauCu varchar(50) ,
 	@MatKhauMoi varchar(50) 
 as 
 begin 
 	declare @matKhau  varchar(50) 
+	declare @status int 
 	select @matKhau = MatKhau from NhanVien where email = @email
 	if ( @matKhau = @MatKhauCu ) 
 		begin 
 			update NhanVien set MatKhau = @MatKhauMoi where email = @email
-			return 1
+			set @status = 1
 		end
 	else 
-		return 0 
+		set @status = 0 
+	select @status
 end
+
+exec DoiMatKhau 'a' , '', ''
 
 
 go
@@ -73,3 +77,11 @@ begin
 select MANV,TenNV,Email,VaiTro,DiaChi,MatKhau from NhanVien
 end
 go
+create proc LayVaiTro 
+	@Email varchar(50) 
+as
+begin
+	Select Vaitro from NhanVien where email = @Email
+end
+
+exec LayVaiTro 'duonng1203@gmail.com'

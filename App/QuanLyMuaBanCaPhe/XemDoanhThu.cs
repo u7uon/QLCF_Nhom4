@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyMuaBanCaPhe
 {
-    public partial class XemDoanhThu : Form
+    public partial class frmThongke : Form
     {
-        public XemDoanhThu()
+        public frmThongke()
         {
             InitializeComponent();
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS_QLCF;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,50 +13,89 @@ namespace QuanLyMuaBanCaPhe
 {
     public partial class TableManagercs : Form
     {
-        public TableManagercs()
+        public TableManagercs(string email)
         {
             InitializeComponent();
+            this.email = email;
         }
+        private BUS_NhanVien bus_nv = new BUS_NhanVien();
 
+        private string email;
+        public bool isAdmin;
+ 
+
+
+        private void LoggedIn(bool status)
+        {
+            if (status)
+            {
+                menuStripAdmin.Visible = isAdmin;
+            }
+            else 
+            {
+                Login frmLogin = new Login();
+                frmLogin.Show();
+                this.Close();
+            }
+        }
+        void ChangeForm(Form form)
+        {
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(form);
+            form.Show();
+        }
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thông_tin_cá_nhân T = new Thông_tin_cá_nhân();
-            T.ShowDialog();
+            frmDoiMatKhau frm = new frmDoiMatKhau();
+            frm.ShowDialog();
+            if (frm.isSuccess)
+            {
+                frm.Close();
+                LoggedIn(false);
+            }
         }
 
         private void quảnLýNhapKhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Quanlynhapkho nk = new Quanlynhapkho();
-            nk.ShowDialog();
+            ChangeForm(new frmQLKho());
         }
 
         private void orderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            order order = new order();
-            order.ShowDialog();
+            ChangeForm(new FrmOrder());
         }
 
         private void xemDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            XemDoanhThu doanhThu = new XemDoanhThu();
-            doanhThu.ShowDialog();
+            ChangeForm(new frmThongke());
         }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Quanlynhanvien nv = new Quanlynhanvien();
-            nv.ShowDialog();
+            ChangeForm(new frmQLNV());
         }
 
         private void quảnLýMenuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLyMenu menu = new QuanLyMenu();
-            menu.ShowDialog();
+            ChangeForm(new frmQlMenu());
         }
 
         private void TableManagercs_Load(object sender, EventArgs e)
         {
+            LoggedIn(true);
+        }
 
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoggedIn(false);
         }
     }
 }

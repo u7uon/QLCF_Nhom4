@@ -1,6 +1,6 @@
 ﻿namespace QuanLyMuaBanCaPhe
 {
-    partial class Thông_tin_cá_nhân
+    partial class frmDoiMatKhau
     {
         /// <summary>
         /// Required designer variable.
@@ -85,6 +85,7 @@
             this.btnDoiMK.TabIndex = 4;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // panel5
             // 
@@ -103,6 +104,7 @@
             this.textBox1.Size = new System.Drawing.Size(268, 27);
             this.textBox1.TabIndex = 1;
             this.textBox1.UseSystemPasswordChar = true;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -201,7 +203,7 @@
             this.lblDangNhap.TabIndex = 0;
             this.lblDangNhap.Text = "Tên Đăng Nhập:";
             // 
-            // Thông_tin_cá_nhân
+            // frmDoiMatKhau
             // 
             this.AcceptButton = this.btnDoiMK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,7 +212,7 @@
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(687, 546);
             this.Controls.Add(this.panel1);
-            this.Name = "Thông_tin_cá_nhân";
+            this.Name = "frmDoiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông_tin_cá_nhân";
             this.panel1.ResumeLayout(false);

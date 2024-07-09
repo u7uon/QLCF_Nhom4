@@ -1,0 +1,6 @@
+D:\DUAN1\QLCF_Nhom4\App\DTO_QLCF\bin\Debug\DTO_QLCF.dll
+D:\DUAN1\QLCF_Nhom4\App\DTO_QLCF\bin\Debug\DTO_QLCF.pdb
+D:\DUAN1\QLCF_Nhom4\App\DTO_QLCF\obj\Debug\DTO_QLCF.csproj.AssemblyReference.cache
+D:\DUAN1\QLCF_Nhom4\App\DTO_QLCF\obj\Debug\DTO_QLCF.csproj.CoreCompileInputs.cache
+D:\DUAN1\QLCF_Nhom4\App\DTO_QLCF\obj\Debug\DTO_QLCF.dll
+D:\DUAN1\QLCF_Nhom4\App\DTO_QLCF\obj\Debug\DTO_QLCF.pdb
