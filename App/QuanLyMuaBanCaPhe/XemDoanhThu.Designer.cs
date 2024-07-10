@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 673);
+            this.ClientSize = new System.Drawing.Size(1857, 1055);
             this.Controls.Add(this.panel1);
             this.Name = "frmThongke";
             this.Text = "XemDoanhThu";

@@ -6,6 +6,8 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,6 +37,7 @@ namespace QuanLyMuaBanCaPhe
         {
             
         }
+ 
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -48,7 +51,6 @@ namespace QuanLyMuaBanCaPhe
             {
                 MessageBox.Show("Đăng nhập thành công");
                 TableManagercs frmMain = new TableManagercs(txtTenDangNhap.Text);
-                frmMain.isAdmin = bus_nv.GetVaiTro(txtTenDangNhap.Text);
                 frmMain.Show();
                 this.Hide();
             }
@@ -57,6 +59,29 @@ namespace QuanLyMuaBanCaPhe
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu , vui lòng thử lại");
                 txtMatKhau.Clear();
                 txtTenDangNhap.Focus();
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            using(QuenMatKhau f = new QuenMatKhau())
+            {
+                f.ShowDialog();
+            }
+            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPassword.Checked)
+            {
+                txtMatKhau.PasswordChar = '\0';
+                
+            }
+            else
+            {
+                txtMatKhau.PasswordChar = '*';
+              
             }
         }
     }

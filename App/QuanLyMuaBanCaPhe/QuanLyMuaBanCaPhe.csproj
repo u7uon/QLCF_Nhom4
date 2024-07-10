@@ -66,6 +66,12 @@
     <Compile Include="QuanLyMenu.Designer.cs">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuenMatKhau.Designer.cs">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quản lý nhân viên cs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="QuanLyMenu.resx">
       <DependentUpon>QuanLyMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuenMatKhau.resx">
+      <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Quản lý nhân viên cs.resx">
       <DependentUpon>Quản lý nhân viên cs.cs</DependentUpon>

@@ -21,7 +21,7 @@ namespace QuanLyMuaBanCaPhe
         private BUS_NhanVien bus_nv = new BUS_NhanVien();
 
         private string email;
-        public bool isAdmin;
+        
  
 
 
@@ -29,7 +29,7 @@ namespace QuanLyMuaBanCaPhe
         {
             if (status)
             {
-                menuStripAdmin.Visible = isAdmin;
+                menuStripAdmin.Visible = bus_nv.GetVaiTro(email);
             }
             else 
             {
@@ -96,6 +96,16 @@ namespace QuanLyMuaBanCaPhe
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LoggedIn(false);
+        }
+
+        private void TableManagercs_Resize(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void panel1_Resize(object sender, EventArgs e)
+        {
+           
         }
     }
 }

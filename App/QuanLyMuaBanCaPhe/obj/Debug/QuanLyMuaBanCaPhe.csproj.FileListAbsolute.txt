@@ -39,3 +39,4 @@ D:\DUAN1\QLCF_Nhom4\App\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.frmQLKho.r
 D:\DUAN1\QLCF_Nhom4\App\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.frmDoiMatKhau.resources
 D:\DUAN1\QLCF_Nhom4\App\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.frmThongke.resources
 D:\DUAN1\QLCF_Nhom4\App\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMu.8AA045DB.Up2Date
+D:\DUAN1\QLCF_Nhom4\App\QuanLyMuaBanCaPhe\obj\Debug\QuanLyMuaBanCaPhe.QuenMatKhau.resources

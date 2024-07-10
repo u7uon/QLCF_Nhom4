@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,8 +16,8 @@ namespace DTO_QLCF
         private string GioiTinh;
         private string soDienThoai;
         private string DiaChi;
-        private double Luong;
-        private string Password;
+        private string CCCD;
+        private DateTime NgaySinh;
 
         public string email
         {
@@ -48,26 +49,30 @@ namespace DTO_QLCF
             get { return DiaChi; }
             set { DiaChi = value; }
         }
-        public double luong
+        public string cccd
         {
-            get { return Luong; }
-            set { Luong = value; }
+            get { return CCCD; }
+            set { CCCD = value; }
         }
-        public string password {
-            get { return Password; } 
-            set { Password = value; }
+        public DateTime ngaySinh
+        {
+            get { return NgaySinh; }
+            set
+            {
+                NgaySinh = value;
+            }
         }
 
-        public DTO_NhanVien(string email, string tenNV, int vaiTro, string gioiTinh, string soDienThoai, string diaChi, double luong, string password )
+        public DTO_NhanVien(string email, string tenNV, int vaiTro, string gioiTinh, string soDienThoai, string diaChi, double luong, string password, DateTime NgaySinh)
         {
-           this.Email = email;
+            this.Email = email;
             this.TenNV = tenNV;
             this.VaiTro = vaiTro;
-            this.GioiTinh=gioiTinh;
-            this.soDienThoai= soDienThoai;
-            this.DiaChi= diaChi;
-            this.Luong= luong;
-            this.Password= password;
+            this.GioiTinh = gioiTinh;
+            this.soDienThoai = soDienThoai;
+            this.DiaChi = diaChi;
+            this.NgaySinh = NgaySinh;
         }
+        public DTO_NhanVien() { }
     }
 }
