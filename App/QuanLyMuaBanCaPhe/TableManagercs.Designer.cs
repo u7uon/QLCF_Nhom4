@@ -158,7 +158,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1857, 1070);
+            this.panel1.Size = new System.Drawing.Size(1857, 1027);
             this.panel1.TabIndex = 1;
             this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
             // 
@@ -167,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1857, 1098);
+            this.ClientSize = new System.Drawing.Size(1857, 1055);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

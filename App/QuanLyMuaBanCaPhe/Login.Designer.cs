@@ -32,13 +32,13 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.lblMatKhau = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.lblTenDangNhap = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -87,16 +87,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(605, 65);
             this.panel3.TabIndex = 2;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(275, 23);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(324, 27);
-            this.txtMatKhau.TabIndex = 1;
-            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // lblMatKhau
             // 
@@ -161,6 +151,14 @@
             this.chkShowPassword.UseVisualStyleBackColor = true;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Location = new System.Drawing.Point(267, 16);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(324, 22);
+            this.txtMatKhau.TabIndex = 1;
+            // 
             // Login
             // 
             this.AcceptButton = this.btnDangNhap;
@@ -194,13 +192,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblTenDangNhap;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Label lblMatKhau;
         private System.Windows.Forms.TextBox txtTenDangNhap;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.CheckBox chkShowPassword;
+        private System.Windows.Forms.TextBox txtMatKhau;
     }
 }
 

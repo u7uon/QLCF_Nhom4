@@ -97,12 +97,13 @@ end
 
 
 go
-create proc DanhSachNV
+alter proc DanhSachNV
 as
 begin
-select MANV,TenNV,Email,VaiTro,DiaChi,MatKhau from NhanVien
+select Email , TenNV ,  VaiTro , GioiTinh ,SoDT ,DiaChi ,CCCD ,NgaySinh  from NhanVien
 end
 go
+select * from NhanVien
 alter proc LayVaiTro 
 	@Email varchar(50) 
 as

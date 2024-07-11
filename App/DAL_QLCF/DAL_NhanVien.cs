@@ -1,6 +1,7 @@
 ﻿using DTO_QLCF;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -249,6 +250,33 @@ namespace DAL_QLCF
             }
             return false;
         }
+        public DataTable Load_NV()
+        {
+            try
+            {
+                conn_.Open();
 
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn_;
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandText = "DanhSachNV";
+                    
+                    DataTable data = new DataTable();
+                    data.Load(cmd.ExecuteReader()); 
+
+                   return data;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            finally
+            {
+                conn_.Close();
+            }
+            return null;
+        }
     }
 }

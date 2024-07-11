@@ -78,6 +78,23 @@ namespace QuanLyMuaBanCaPhe
                 (!rdoNam.Checked && !rdoNu.Checked);
 
         }
+        private void LoadGrid()
+        {
+            dtgvQuanLyNhanVien.Columns[0].HeaderText = "Email";
+            dtgvQuanLyNhanVien.Columns[1].HeaderText = "Tên nhân viên";
+            dtgvQuanLyNhanVien.Columns[2].HeaderText = "Vai trò";
+            dtgvQuanLyNhanVien.Columns[3].HeaderText = "Giới tính";
+            dtgvQuanLyNhanVien.Columns[4].HeaderText = "Số điện thoại";
+            dtgvQuanLyNhanVien.Columns[5].HeaderText = "Địa chỉ";
+            dtgvQuanLyNhanVien.Columns[6].HeaderText = "CCCD";
+            dtgvQuanLyNhanVien.Columns[7].HeaderText = "Ngày sinh";
+             //Email , TenNV ,  VaiTro , GioiTinh ,SoDT ,DiaChi ,CCCD ,NgaySinh
+        }
+        void LoadData()
+        {
+            dtgvQuanLyNhanVien.DataSource = bus_nv.Load_NV(); 
+            LoadGrid();
+        }
         private bool ValidEmail(string email)
         {
             try
@@ -132,9 +149,15 @@ namespace QuanLyMuaBanCaPhe
                 sb.Append(RandomString(3,false));
                 sb.Append(RandomNumber(11,99));
 
+                LoadData(); 
                 SendMail(NV.email, sb.ToString())  ;
                 bus_nv.Insert_TK(NV.email , sb.ToString()) ;
             }
     }
-}
+
+        private void frmQLNV_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+    }
 }

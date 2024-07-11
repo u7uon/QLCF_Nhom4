@@ -2,6 +2,7 @@
 using DTO_QLCF;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -78,6 +79,10 @@ namespace BUS_QLCF
         {
             string salt = GenerateSalt();
             return dal_nv.Insert_TK(email, HashPassword(pass , salt) , salt) ; 
+        }
+        public DataTable Load_NV()
+        {
+            return dal_nv.Load_NV();
         }
     }
 }
